@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent { 
+        docker { image 'stefanscherer/node-windows' }
+    }
     stages {
         stage('Build') {
             steps {
