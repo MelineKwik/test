@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'node:6.3' } }
+    agent any
     stages {
         stage('Build') {
             steps {
-                bat 'npm --version'
+                bat 'set'
             }
         }
     }
